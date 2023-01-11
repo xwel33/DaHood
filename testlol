@@ -1139,7 +1139,7 @@ lib.init = function(title, accent, togglekey)
 				uiSliderSelectionsLabel.Size = UDim2.new(1, -25, 0, 17)
 				uiSliderSelectionsLabel.ZIndex = 4
 				uiSliderSelectionsLabel.Font = Enum.Font.Arial
-				uiSliderSelectionsLabel.Text = "none"
+				uiSliderSelectionsLabel.Text = firsttext
 				uiSliderSelectionsLabel.TextColor3 = Color3.fromRGB(208, 208, 208)
 				uiSliderSelectionsLabel.TextSize = 11.000
 				uiSliderSelectionsLabel.TextStrokeTransparency = 0.350
@@ -1195,7 +1195,7 @@ lib.init = function(title, accent, togglekey)
 								for i,v in pairs(dropdownLabels) do
 									game:GetService("TweenService"):Create(v,TweenInfo.new(0.33,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{TextColor3 = Color3.fromRGB(208, 208, 208)}):Play()
 								end
-								lib.flags[flag] = "none"
+								lib.flags[flag] = firsttext
 							end
 							uiSliderSelectionsLabel.Text = lib.flags[flag]
 							pcall(callback, lib.flags[flag])
