@@ -1077,7 +1077,7 @@ lib.init = function(title, accent, togglekey)
 				return colorpickerlib
 			end
 
-			things.createDropdown = function(title, options, flag, callback)
+			things.createDropdown = function(title, text, options, flag, callback)
 				if localxs % 2 == 0 then
 					xl = xl + 42
 				else
@@ -1095,7 +1095,7 @@ lib.init = function(title, accent, togglekey)
 				local size = 0
 				local closing = false
 				local open = false
-				lib.flags[flag] = "none"
+				lib.flags[flag] = text
 				
 				uiSectionDropdown.Name = "uiSectionDropdown"
 				uiSectionDropdown.Parent = uiTabSectionHolder
